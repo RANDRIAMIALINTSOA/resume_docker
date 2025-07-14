@@ -25,49 +25,69 @@ Un conteneur est une version légère d'une machine virtuelle, qui regroupe une 
 
 ### Images et Conteneurs
 
-```bash
-# Télécharger une image depuis Docker Hub
+```
+**Télécharger une image depuis Docker Hub**
+```
 docker pull <nom_de_l_image>
+```
 
-# Lister les images disponibles
+**Lister les images disponibles**
+```
 docker images
+```
 
-# Supprimer une image
+** Supprimer une image**
+```
 docker rmi <image_id>
 ```
 
 ### Gestion des conteneurs
 
-```bash
-# Exécuter un conteneur
+**Exécuter un conteneur**
+```
 docker run <options> <nom_image>
+```
 
-# Exemple : exécuter nginx sur le port 8080
+**Exemple : exécuter nginx sur le port 8080**
+```
 docker run -d -p 8080:80 nginx
+```
 
-# Lister les conteneurs actifs
+**Lister les conteneurs actifs**
+```
 docker ps
+```
 
-# Lister tous les conteneurs (même arrêtés)
+**Lister tous les conteneurs (même arrêtés)**
+```
 docker ps -a
+```
 
-# Stopper un conteneur
+** Stopper un conteneur**
+```
 docker stop <container_id>
+```
 
-# Supprimer un conteneur
+**Supprimer un conteneur**
+```
 docker rm <container_id>
 ```
 
 ### Volumes (données persistantes)
 
-```bash
-# Créer un volume
+
+**Créer un volume**
+```
 docker volume create mon_volume
+```
 
-# Lister les volumes
+**Lister les volumes**
+```
 docker volume ls
+```
 
-# Supprimer un volume
+**Supprimer un volume**
+```
 docker volume rm mon_volume
 ```
 
@@ -202,13 +222,15 @@ tolérance = 2
 
 ```
 bash
-# Vérifier l'espace utilisé
+**Vérifier l'espace utilisé**
+```
 docker system df
+```
 
-# Nettoyer les ressources inutilisées
+**Nettoyer les ressources inutilisées**
+```
 docker system prune
 
 ```
 
 
-*Créé par Mialy RANDRIAMIALINTSOA – Leçon Docker complète simplifiée pour débutants.*
