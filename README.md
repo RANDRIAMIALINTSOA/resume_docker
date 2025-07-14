@@ -25,18 +25,20 @@ Un conteneur est une version légère d'une machine virtuelle, qui regroupe une 
 
 ### Images et Conteneurs
 
-```
+
 **Télécharger une image depuis Docker Hub**
 ```
 docker pull <nom_de_l_image>
 ```
 
 **Lister les images disponibles**
+
 ```
 docker images
 ```
 
-** Supprimer une image**
+**Supprimer une image**
+
 ```
 docker rmi <image_id>
 ```
