@@ -1,15 +1,17 @@
-# resume_docker
----
 
-## 1.Introduction à Docker
+# Resume Docker :
+
+## 1. Introduction à Docker
 
 ### Qu'est-ce que Docker ?
 
-Docker est une plateforme permettant de **créer**, **déployer** et **exécuter** des applications dans des **conteneurs**.
+Docker est une plateforme permettant de ** créer**, *déployer et * exécuter des applications dans des *conteneurs.
 
 Un conteneur est une version légère d'une machine virtuelle, qui regroupe une application avec toutes ses dépendances, ce qui garantit que le code s'exécutera de la même manière partout.
----
-## 2.Avantages de Docker
+
+
+
+## 2. Avantages de Docker
 
 - Isolation des applications
 - Légèreté des conteneurs
@@ -18,7 +20,8 @@ Un conteneur est une version légère d'une machine virtuelle, qui regroupe une 
 - Meilleure gestion des dépendances
 
 ---
-## 3.Commandes Docker de base
+
+## 3. Commandes Docker de base
 
 ### Images et Conteneurs
 
@@ -69,6 +72,7 @@ docker volume rm mon_volume
 ```
 
 ### Dockerfile (automatiser la création d'image)
+
 Un fichier `Dockerfile` permet de définir une image personnalisée :
 
 ```Dockerfile
@@ -87,7 +91,8 @@ docker build -t mon_app .
 
 ---
 
-## 4.Docker Compose
+## 4. Docker Compose
+
 Le fichier `docker-compose.yml` permet de gérer plusieurs services ensemble (ex. : application + base de données).
 
 Exemple :
@@ -113,7 +118,7 @@ docker-compose up -d
 
 ---
 
-## 5.Réseaux, Swarm et Résilience
+## 5. Réseaux, Swarm et Résilience
 
 ### Euphemère
 
@@ -173,7 +178,7 @@ tolérance = 5 - 3 = 2
 
 ---
 
-## 6.Résumé Visuel
+## 6. Résumé Visuel
 
 Cluster :
 - Manager (control plane)
@@ -189,21 +194,26 @@ tolérance = 2
 
 ---
 
-## 7.Vérification et Nettoyage
+## 7. Vérification et Nettoyage
 
-```bash
+```
+bash
 # Vérifier l'espace utilisé
 docker system df
 
 # Nettoyer les ressources inutilisées
 docker system prune
+
 ```
+
 ---
 
-## 8.Ressources Utiles
+## 8. Ressources Utiles
 
 - [Docker Documentation](https://docs.docker.com/)
 - [DockerHub](https://hub.docker.com/)
 - [Play with Docker](https://labs.play-with-docker.com/)
 
 ---
+
+*Créé par Mialy RANDRIAMIALINTSOA – Leçon Docker complète simplifiée pour débutants.*
