@@ -66,7 +66,7 @@ docker ps
 docker ps -a
 ```
 
-** Stopper un conteneur**
+**Stopper un conteneur**
 ```
 docker stop <container_id>
 ```
