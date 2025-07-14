@@ -132,8 +132,10 @@ docker-compose up -d
 
 ### Réplication des conteneurs
 
-```bash
+```
+bash
 nginx.1 et nginx.2 sont des *réplicas* du même conteneur.
+
 ```
 
 ---
