@@ -162,11 +162,13 @@ Solution : Répliquer les composants critiques dans un cluster.
 - tolérance = `n - quorum`
 
 **Exemple** :
-```text
+```
+text
 Si n = 5 :
 quorum = floor(5 / 2) + 1 = 3
 tolérance = 5 - 3 = 2
 → Le système peut tolérer la perte de 2 managers
+
 ```
 
 ---
@@ -206,14 +208,5 @@ docker system prune
 
 ```
 
----
-
-## 8. Ressources Utiles
-
-- [Docker Documentation](https://docs.docker.com/)
-- [DockerHub](https://hub.docker.com/)
-- [Play with Docker](https://labs.play-with-docker.com/)
-
----
 
 *Créé par Mialy RANDRIAMIALINTSOA – Leçon Docker complète simplifiée pour débutants.*
