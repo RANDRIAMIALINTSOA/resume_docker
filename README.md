@@ -222,8 +222,6 @@ tolérance = 2
 
 ## 7. Vérification et Nettoyage
 
-```
-bash
 **Vérifier l'espace utilisé**
 ```
 docker system df
