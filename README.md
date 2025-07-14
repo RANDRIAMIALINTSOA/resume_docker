@@ -234,4 +234,96 @@ docker system prune
 
 ```
 
+#  Docker Network — Gestion des Réseaux
+
+Docker permet de créer, gérer et connecter des réseaux personnalisés pour que les conteneurs puissent communiquer entre eux de manière sécurisée et flexible.
+
+---
+
+## 8. Types de réseaux Docker
+
+| Type           | Description |
+|----------------|-------------|
+| `bridge` (par défaut) | Réseau local privé pour les conteneurs sur le même hôte. Utilisé par défaut par `docker run`. |
+| `host`         | Utilise directement le réseau de l’hôte (pas d'isolation réseau). |
+| `none`         | Aucun accès réseau. |
+| `overlay`      | Réseau distribué utilisé avec Docker Swarm, permettant la communication entre conteneurs sur plusieurs hôtes. |
+| `macvlan`      | Attribue une adresse IP directe depuis le réseau physique à chaque conteneur. |
+
+---
+
+## 9. Commandes de base
+
+**Lister les réseaux existants**
+```
+docker network ls
+```
+
+**Voir les détails d’un réseau**
+```
+docker network inspect <nom_du_réseau>
+```
+
+**Créer un réseau personnalisé (bridge)**
+```
+docker network create mon_reseau
+```
+
+**Supprimer un réseau**
+```
+docker network rm mon_reseau
+```
+
+---
+
+## 10. Utilisation dans `docker run`
+
+Associer un conteneur à un réseau spécifique :
+```
+docker run -d --name mon_app --network mon_reseau nginx
+```
+
+## 11. Connecter / Déconnecter un conteneur à un réseau
+
+**Connecter :**
+```
+docker network connect mon_reseau mon_conteneur
+```
+
+**Déconnecter :**
+```
+docker network disconnect mon_reseau mon_conteneur
+```
+
+---
+
+## 12. Exemple avec Docker Compose
+
+```yaml
+version: '3'
+services:
+  app:
+    image: my_app
+    networks:
+      - app_net
+
+  db:
+    image: postgres
+    networks:
+      - app_net
+
+networks:
+  app_net:
+    driver: bridge
+```
+
+
+## 13. Réseaux dans Docker Swarm (overlay)
+
+Lorsque tu utilises Docker Swarm, le réseau `overlay` permet de connecter des services situés sur **plusieurs machines** :
+
+```bash
+docker network create --driver overlay mon_reseau_swarm
+```
+
 
