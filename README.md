@@ -27,6 +27,7 @@ Un conteneur est une version légère d'une machine virtuelle, qui regroupe une 
 
 
 **Télécharger une image depuis Docker Hub**
+
 ```
 docker pull <nom_de_l_image>
 ```
