@@ -1,13 +1,12 @@
 # resume_docker
 ---
 
-## 1. Introduction à Docker
+## 1.Introduction à Docker
 
 ### Qu'est-ce que Docker ?
 
 Docker est une plateforme permettant de **créer**, **déployer** et **exécuter** des applications dans des **conteneurs**.
 Un conteneur est une version légère d'une machine virtuelle, qui regroupe une application avec toutes ses dépendances, ce qui garantit que le code s'exécutera de la même manière partout.
-
 ---
 ## 2.Avantages de Docker
 
@@ -18,7 +17,6 @@ Un conteneur est une version légère d'une machine virtuelle, qui regroupe une 
 - Meilleure gestion des dépendances
 
 ---
-
 ## 3.Commandes Docker de base
 
 ### Images et Conteneurs
